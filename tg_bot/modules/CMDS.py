@@ -34,14 +34,11 @@ def post_telegraph(bot: Bot, update: Update, args: List[str]):
 
 __help__ = """
 *☞ My Name :* File Controller Bot
-*☞ Creator :* @Thakor_Rahul - ⍟
-*☞ Credits : Everyone in this journey
-*☞ Language:* [Python3.6](https://www.python.org)
-*☞ Library :* [Pyrogram asyncio 0.16.1](https://docs.pyrogram.org/)
-*☞ Developed by :* [Rahul Kumar](http://telegram.dog/thakor_rahul)
-*☞ Server  :* [Heroku](https://www.heroku.com)
-*☞ Build Status :* V10 `[+1.0]`
-*☞ Powered by  :* [Telegram](https://telegram.org)
+*☞ Creator     :* *@Thakor_Rahul*
+*☞ Credits     :* `Everyone in this journey`
+*☞ Language :* [Python 3.6](https://docs.python.org/)
+*☞ Channel   :* [Premium Apks](https://t.me/joinchat/AAAAAEYc2T51PtOqhAmeiQ)
+*☞ Build Status :* V11 `[+1.01]`
 """
 __mod_name__ = "⚠️About"
 
