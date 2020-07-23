@@ -33,14 +33,15 @@ def post_telegraph(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """
-○ My Name : *File Controller Bot*
-○ Creator : [This Boy](https://t.me/thakor_rahul)
-○ Credits : `Everyone in this journey`
-○ Language : Python3.6
-○ Library : [Pyrogram asyncio 0.16.1](https://docs.pyrogram.org/)
-○ Developed by : [Rahul Kumar](http://telegram.dog/thakor_rahul)
-○ Server : Heroku
-○ Build Status : V4 `[+0.4]`
+*☞ My Name :* File Controller Bot
+*☞ Creator :* @Thakor_Rahul - ⍟
+*☞ Credits : Everyone in this journey
+*☞ Language:* [Python3.6](https://www.python.org)
+*☞ Library :* [Pyrogram asyncio 0.16.1](https://docs.pyrogram.org/)
+*☞ Developed by :* [Rahul Kumar](http://telegram.dog/thakor_rahul)
+*☞ Server  :* [Heroku](https://www.heroku.com)
+*☞ Build Status :* V10 `[+1.0]`
+*☞ Powered by  :* [Telegram](https://telegram.org)
 """
 __mod_name__ = "⚠️About"
 
