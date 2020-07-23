@@ -37,7 +37,7 @@ __help__ = """
 *☞ Creator     :* *@Thakor_Rahul*
 *☞ Credits     :* `Everyone in this journey`
 *☞ Language :* [Python 3.6](https://docs.python.org/)
-*☞ Channel   :* [Premium Apks](https://t.me/joinchat/AAAAAEYc2T51PtOqhAmeiQ)
+*☞ Channel    :* *@Premium_ApkZ*
 *☞ Build Status :* V11 `[+1.01]`
 """
 __mod_name__ = "⚠️About"
