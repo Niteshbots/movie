@@ -41,9 +41,7 @@ Hello! my name *{}*.
 All of the following commands  / can  be used...
 
 And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / can  be used...
-
-And the following:\n")
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / can  be used...\nAnd the following:\n")
 
 DONATE_STRING = """Sorry But Currently I Don't Need Any Donations."""
 
