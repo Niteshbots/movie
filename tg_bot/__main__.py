@@ -18,17 +18,10 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-┈╭━━━━━━━━━━━╮┈
-┈┃╭━━━╮┊╭━━━╮┃┈
-╭┫┃┈▇┈┃┊┃┈▇┈┃┣╮
-┃┃╰━━━╯┊╰━━━╯┃┃
-╰┫╭━╮╰━━━╯╭━╮┣╯
-┈┃┃┣┳┳┳┳┳┳┳┫┃┃┈
-┈┃┃╰┻┻┻┻┻┻┻╯┃┃┈
-┈╰━━━━━━━━━━━╯┈
-╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗
-║║║╠─║─║─║║║║║╠─
-╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝
+┏┳━┳┓
+┃┃┃┃┣━┳┓┏━┳━┳━━┳━┓
+┃┃┃┃┃┻┫┗┫━┫╋┃┃┃┃┻┫
+┗━┻━┻━┻━┻━┻━┻┻┻┻━┛
 
 *Hai* *{}*,*My Name is* *{}*! 
 
@@ -48,11 +41,11 @@ Hello! my name *{}*.
 All of the following commands  / can  be used...
 
 And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nഈ പറഞ്ഞിരിക്കുന്ന commandകൾ എല്ലാം  / അല്ലെങ്കിൽ ! വെച്ച് ഉപയോഗിക്കാവുന്നതാണ്...\n")
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / can  be used...
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-You can Donate anything for [my creator](t.me/charlie_jin).
-It will make him HAPPY and every donation helps motivate him to make me even better. All the donation money will go to a better VPS to host me."""
+And the following:\n")
+
+DONATE_STRING = """Sorry But Currently I Don't Need Any Donations."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -142,7 +135,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🛅ADD ME TO YOUR GROUP🛅", url="t.me/{}?startgroup=true".format(bot.username))]]))
+                parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔰 JOIN PREMIUM APKS 🔰", url="https://t.me/joinchat/AAAAAEYc2T51PtOqhAmeiQ".format(bot.username))]]))
     else:
         update.effective_message.reply_text("")
 
