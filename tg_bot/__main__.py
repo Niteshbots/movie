@@ -7,7 +7,7 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError
 from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop
-from telegram.utils.helpers import escape_markdown
+from/save test This is a markdown test. _italics_, *bold*, `code`, [URL](example.com) [button](buttonurl:github.com) [button2](buttonurl://google.com:same) telegram.utils.helpers import escape_markdown
 
 from tg_bot import dispatcher, updater, TOKEN, WEBHOOK, OWNER_ID, DONATION_LINK, CERT_PATH, PORT, URL, LOGGER, \
     ALLOW_EXCL
@@ -26,7 +26,7 @@ PM_START_TEXT = """
 *Hlw* *{}*,*My Name is* *{}*! 
 
 Am a powerful *Filter Bot* in Telegram.
-Developed by this [Legend](tg://user?id={}).
+Developed by this @TGMoviesAdda.
 
 ```Y You Can Add any kind of Filters with This Bot!```
 
@@ -133,7 +133,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔰 JOIN PREMIUM APKS 🔰", url="https://t.me/joinchat/AAAAAEYc2T51PtOqhAmeiQ".format(bot.username))]]))
+                parse_mode=ParseMode.MARKDOWN,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🎥Click to Join Channel🎬", url="https://t.me/joinchat/AAAAAEeidYT9TF19dODctw".format(bot.username))]]))
     else:
         update.effective_message.reply_text("")
 
